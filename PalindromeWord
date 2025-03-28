@@ -1,0 +1,20 @@
+package String;
+
+public class PalindromeWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="where is nayan and nitin naman is looking for them";
+		String s1[]=str.split(" ");
+		for (int i=0;i<s1.length;i++) {
+			String temp=s1[i];
+			StringBuilder sb=new StringBuilder(temp).reverse();
+			if (temp.equalsIgnoreCase(sb.toString())) {
+			
+			System.out.println(temp);
+			
+	}
+	}
+	}
+}
