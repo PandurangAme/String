@@ -1,0 +1,21 @@
+package String;
+
+public class CountStringSize {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="hello i am java developer";
+		String s1[]=str.split(" ");
+		StringBuilder sb =new StringBuilder();
+		for(int i=0;i<s1.length;i++) {
+		 String temp=s1[i];
+		 sb.append(temp);
+		 sb.append(temp.length());
+		 if (i<s1.length-1)
+			 sb.append(" ");
+		}
+		System.out.println(sb);
+
+	}
+
+}
