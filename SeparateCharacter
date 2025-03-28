@@ -1,0 +1,25 @@
+package String;
+
+public class SeparateCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input="1abc2$87";
+		StringBuilder num=new StringBuilder();
+		StringBuilder chars=new StringBuilder();
+		StringBuilder sql=new StringBuilder();
+		for(char ch:input.toCharArray() ) {
+			if(Character.isDigit(ch)) {
+				num.append(ch);
+			}else if(Character.isLetter(ch)) {
+				chars.append(ch);
+			}else {
+				sql.append(ch);
+			}
+		}
+    System.out.println("String num="+num.toString());
+    System.out.println("String chars="+chars.toString());
+    System.out.println("String sql="+sql.toString());
+	}
+
+}
