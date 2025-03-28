@@ -1,0 +1,13 @@
+package String;
+
+public class RemoveOccurenceCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="automation";
+		String str1=str.replaceAll("a","");
+		System.out.println(str1);
+
+	}
+
+}
