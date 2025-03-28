@@ -1,0 +1,18 @@
+package String;
+
+public class FirstCharacterUpperCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     String str="java is a prgramming language";
+     String[] str1=str.split(" ");
+     StringBuilder sb=new StringBuilder();
+    for (String str2:str1) {
+    	sb.append(Character.toUpperCase(str2.charAt(0)));
+    	sb.append(str2.substring(1));
+    	sb.append(" ");
+    }
+    System.out.println(sb.toString().trim());
+	}
+
+}
